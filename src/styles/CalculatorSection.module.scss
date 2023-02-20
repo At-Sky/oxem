@@ -71,10 +71,14 @@
       border-radius: 16px;
       position: absolute;
       right: 7px;
-      bottom: calc(50% - 46px);
+      bottom: calc(50% - 42px);
 
       @media (min-width: 1024px) {
-        bottom: calc(50% - 42px);
+        bottom: calc(50% - 49px);
+      }
+
+      @media (max-width: 1024px) {
+        bottom: calc(50% - 49px);
       }
 
       @media (max-width: 320px) {
@@ -172,12 +176,8 @@
   &__mark {
     position: absolute;
     left: 24px;
-    bottom: -20px;
+    bottom: -21px;
     width: calc(100% - 48px);
-
-    @media (max-width: 768px) {
-      bottom: -21px;
-    }
 
     @media (max-width: 320px) {
       bottom: -22px;

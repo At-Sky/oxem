@@ -176,8 +176,13 @@
   &__mark {
     position: absolute;
     left: 24px;
-    bottom: -21px;
+    bottom: -22px;
     width: calc(100% - 48px);
+
+    @media (min-width: 1440px) {
+      bottom: -22px;
+    }
+
 
     @media (max-width: 320px) {
       bottom: -22px;

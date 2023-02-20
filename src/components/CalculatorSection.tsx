@@ -2,7 +2,6 @@ import React, {useEffect, useRef} from 'react';
 import styles from '@/styles/CalculatorSection.module.scss'
 import Slider from '@mui/material/Slider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import getBoundingClientRect from "@popperjs/core/lib/dom-utils/getBoundingClientRect";
 
 declare module '@mui/material/styles' {
     interface Theme {
@@ -62,6 +61,7 @@ function CalculatorSection({handleCallbackClick}: ICalculator): JSX.Element {
     const firstpay = useRef(null)
     const period = useRef(null)
     //на управляемых инпутах с прогресс барами уже совсем что-то не то пошло
+
     let handleClick = (event:  React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault();
         handleCallbackClick(true);
